@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    #전송 쿼리 확인
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  h2: # H2 콘솔 활성화
+    console:
+      enabled: true
+  jwt:
+    issuer: ajufresh@gmail.com
+    secret_key: study-springboot
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 179553475405-2akphu8qe2qonffjq8e9dsnaat4ibkv6.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
